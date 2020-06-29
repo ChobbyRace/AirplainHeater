@@ -26,5 +26,11 @@ body {
     padding: 20px;
     }
 #end {
-    margin: 500px
+    text-align:center;
+    position: float;
+    margin-top: 300px
+}
+
+#link {
+    margin-top:-10px;
 }

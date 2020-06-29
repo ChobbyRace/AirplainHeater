@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/static/styles.css" />
 </head>
 <body>
     <div id="p00">
@@ -9,12 +9,14 @@
         <p><i>This is a test HTML Page for the Airplane Heater App</i></p>
     </div>
     <div id="p01">
-        <img src="random.jpg" width="300" height="300" style ="margin-top: 20px;">
+        <img src="/static/random.jpg" width="300" height="300" style ="margin-top: 20px;"/>
         <h2 id="p02">This is where the <b>MEAT</b> happens</h2>
         <!-- This is where you will have to insert the python script -->
-        <button>Turn On Heater</button>
+        <button onclick="on()">Turn On Heater</button>
         <p>Time of Turn On: </p>
         <button>Turn Off Heater</button>
+	<p>To View Heat Over Time, click bellow</p>
+	<a id="link" href="/stats">View Temperature Stats</a>
         <hr>
     </div>
     <p id="demo"></p>
