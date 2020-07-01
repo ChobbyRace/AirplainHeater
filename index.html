@@ -16,14 +16,14 @@
 	<br>
 	<br>
 	<button id="offButton" class="float-left submit-button" >Turn Off Heater</button>
-        <br>
+    <br>
 	<br>
 	<p>To View Heat Over Time, click bellow</p>
-        <a id="link" href="templates/stats.html">View Temperature Stats</a>
+    <a id="link" href="templates/stats.html">View Temperature Stats</a>
 	<br>
 	<br>
-	<button onclick="window.location.href='/heater_on.php'"> Bad way to use button links </button>
-        <hr>
+	<button onclick="window.location.href='templates/heater_on.php'"> Bad way to use button links </button>
+    <br>
     </div>
     <p id="demo"></p>
 
@@ -39,13 +39,13 @@
 
 <script type="text/javascript">
         document.getElementById("onButton").onclick = function () {
-                location.href = "/heater_on.php"
+                location.href = "templates/heater_on.php"
 };
 </script>
 
 <script type="text/javascript">
         document.getElementById("offButton").onclick = function () {
-                location.href = "/heater_off.php"
+                location.href = "templates/heater_off.php"
 };
 </script>
 
