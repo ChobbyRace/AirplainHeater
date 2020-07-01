@@ -17,5 +17,9 @@ def turn_on():
     data = jsonify(data)
     return data
 
+@app.route('/test')
+def phpscript():
+    return render_template('webpage.php')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

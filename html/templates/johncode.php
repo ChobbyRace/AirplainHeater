@@ -19,12 +19,10 @@
 <?php
     if(isset($_POST['LOCK']))
     {
-        echo system("python /var/www/html/DOOR/lock.py 2>&1");
-        system("echo DOOR_LOCKED | wall");
+        echo system("python3 ~/git/AirplainHeater/PythonScripts/main.py 2>&1");
     }
     if(isset($_POST['UNLOCK']))
     {
-        echo system("python /var/www/html/DOOR/unlock.py 2>&1");
-        system("echo DOOR_UNLOCKED | wall"); 
+        echo system("python3 ~/git/AirplaneHeater/PythonScrupts/unlock.py 2>&1");
     }
 ?>
