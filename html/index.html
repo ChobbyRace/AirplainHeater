@@ -12,12 +12,17 @@
         <img src="static/random.jpg" width="300" height="300" style ="margin-top: 20px;"/>
         <h2 id="p02">This is where the <b>MEAT</b> happens</h2>
         <!-- This is where you will have to insert the python script -->
-        <button onclick="on()">Turn On Heater</button>
-        <p>Time of Turn On: </p>
-	<a id="link" href="templates/Heater_turnon.php">Turnon php file</a>
-        <button>Turn Off Heater</button>
+	<button id="onButton" class="float-left submit-button" >Turn On Heater</button>
+	<br>
+	<br>
+	<button id="offButton" class="float-left submit-button" >Turn Off Heater</button>
+        <br>
+	<br>
 	<p>To View Heat Over Time, click bellow</p>
-	<a id="link" href="templates/stats.html">View Temperature Stats</a>
+        <a id="link" href="templates/stats.html">View Temperature Stats</a>
+	<br>
+	<br>
+	<button onclick="window.location.href='/heater_on.php'"> Bad way to use button links </button>
         <hr>
     </div>
     <p id="demo"></p>
@@ -32,14 +37,15 @@
 </body>
 </html>
 
-<?php
-    if(isset($_POST['ON']))
-    {
-        echo system("python3 ~/PythonScripts/on.py 2>&1");
-    }
-    if(isset($_POST['OFF']))
-    {
-        echo system("python3 ~/PythonScrupts/unlock.py 2>&1");
-    }
-?>
+<script type="text/javascript">
+        document.getElementById("onButton").onclick = function () {
+                location.href = "/heater_on.php"
+};
+</script>
+
+<script type="text/javascript">
+        document.getElementById("offButton").onclick = function () {
+                location.href = "/heater_off.php"
+};
+</script>
 
