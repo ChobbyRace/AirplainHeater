@@ -1,4 +1,4 @@
-import Adafruit_DHT as dht    # Importing Adafruit library for DHT22
+#import Adafruit_DHT as dht    # Importing Adafruit library for DHT22
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
@@ -15,7 +15,7 @@ ax = fig.add_subplot(1, 1, 1)   #gets us axises to deal with
 def animate(i):
 	#_ , temp = dht.read_retry(dht.DHT22, dht22Pin) 
 	temp = fakeTemp()
-    temp = ('{0:0.1f}'.format(temp))
+	temp = ('{0:0.1f}'.format(temp))
 	with open("cpu_temp.csv", 'a') as log:
 		log.write("{0},{1}\n".format(datetime.now().strftime("%H:%M:%S"),str(temp)))
 
@@ -31,8 +31,9 @@ def animate(i):
 	plt.title('Temperature Graph for Last 24 Hours')
 	plt.ylabel('Temp (deg C)')
 	plt.xlabel('Time')
-ani = animation.FuncAnimation(fig, animate, interval=1000*60*60)
-plt.show()
 
 def fakeTemp():
     return randrange(0,30)
+
+ani = animation.FuncAnimation(fig, animate, interval=60*60)
+plt.show()

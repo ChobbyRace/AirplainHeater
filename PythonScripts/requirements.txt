@@ -1,2 +1,4 @@
 gpiozero
-time
+matplotlib
+datetime
+random
