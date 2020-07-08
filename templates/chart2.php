@@ -2,13 +2,14 @@
 	<link rel="stylesheet" href="../static/chart.css" />
 <head>
 <h2>Temperature over the past 24 hours</h2>
-<table class="f1-table">
+<div class="table-wrapper">
+<!-- <table class="fl-table">  -->
 
 <?php
 $row = 1;
 if (($handle = fopen("../PythonScripts/cpu_temp.csv", "r")) !== FALSE) {
    
-    //echo '<table class="f1-table">'; taken out to maybe fix the css issue
+    echo '<table class="fl-table">'; taken out to maybe fix the css issue
    
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $num = count($data);
@@ -44,4 +45,4 @@ if (($handle = fopen("../PythonScripts/cpu_temp.csv", "r")) !== FALSE) {
     fclose($handle);
 }
 ?>
-</tbody></table>
+</tbody></table></div>
