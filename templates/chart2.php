@@ -3,13 +3,11 @@
 <head>
 <h2>Temperature over the past 24 hours</h2>
 <div class="table-wrapper">
-<!-- <table class="fl-table">  -->
+<table class="fl-table">
 
 <?php
 $row = 1;
 if (($handle = fopen("../PythonScripts/cpu_temp.csv", "r")) !== FALSE) {
-   
-    echo '<table class="fl-table">'; taken out to maybe fix the css issue
    
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $num = count($data);
