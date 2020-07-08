@@ -25,7 +25,7 @@
     }
     if(isset($_POST['BACK']))
     {
-      header('Location: http://localhost:5351/', true, 301);
+      header('Location: http://raspberrypi:5351/', true, 301);
       exit();
     }
 ?>
