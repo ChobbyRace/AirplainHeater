@@ -7,7 +7,7 @@
 
 <?php
 $row = 1;
-if (($handle = fopen("../PythonScripts/cpu_temp.csv", "r")) !== FALSE) {
+if (($handle = fopen("../cpu_temp.csv", "r")) !== FALSE) {
    
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $num = count($data);
