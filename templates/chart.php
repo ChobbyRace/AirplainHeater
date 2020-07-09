@@ -1,30 +1,46 @@
 <html><head>
 	<link rel="stylesheet" href="../static/chart.css" />
 <head>
-<h1 id="p00">Temperature over the past 24 hours</h1>
-<br><br>
+<h2>Temperature over the past 24 hours</h2>
+<div class="table-wrapper">
+<table class="fl-table">
+
 <?php
-echo "<html><body id='p00'><table>\n\n";
-$f = fopen("../PythonScripts/cpu_temp.csv", "r");
-while (($line = fgetcsv($f)) !== false) {
-        echo "<tr>";
-        foreach ($line as $cell) {
-                echo "<td>" . htmlspecialchars($cell) . "</td>";
+$row = 1;
+if (($handle = fopen("../PythonScripts/cpu_temp.csv", "r")) !== FALSE) {
+   
+    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+        $num = count($data);
+        if ($row == 1) {
+            echo '<thead><tr>';
+        }else{
+            echo '<tr>';
         }
-        echo "</tr>\n";
+       
+        for ($c=0; $c < $num; $c++) {
+            //echo $data[$c] . "<br />\n";
+            if(empty($data[$c])) {
+               $value = "&nbsp;";
+            }else{
+               $value = $data[$c];
+            }
+            if ($row == 1) {
+                echo '<th>'.$value.'</th>';
+            }else{
+                echo '<td>'.$value.'</td>';
+            }
+        }
+       
+        if ($row == 1) {
+            echo '</tr></thead><tbody>';
+        }else{
+            echo '</tr>';
+        }
+        $row++;
+    }
+   
+    //echo '</tbody></table>';
+    fclose($handle);
 }
-fclose($f);
-echo "\n</table></body></html>";
 ?>
-<div id="p00">
-	<br>
-	<h1> Test ending </h1>
-</div>
-<div id="p00">
-<address id="end">
-    Written by Rob Chase.<br>
-    For his Dad <br>
-    To heat the Airplane <br>
-    For Tech Support, Call 802-393-7535<br>
-</address>
-</div>
+</tbody></table></div>

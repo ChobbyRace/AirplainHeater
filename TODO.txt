@@ -1,0 +1,18 @@
+### things to do ###
+
+## Functinoal ##
+    # Website & Temp sensor #
+        - test gpio capability on pi
+        - make cron job for temperature sensor
+    
+    # VPN #
+        - download and setup pivpn
+        - get port forwarding to work on router
+        - if using celular, how would that work?
+
+
+## visual ##
+    make columns for chart more even
+    - get picture of the airplane
+    - make index.html look better, use this template 
+        https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_band&stacked=h
