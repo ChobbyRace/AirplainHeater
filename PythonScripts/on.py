@@ -1,12 +1,16 @@
 from gpiozero import Button, LED
 from time import sleep
-#import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 
-# channel = 21 #whatever you have it hooked up to
+GPIO.setmode(GPIO.BOARD)
 
-# def heater_on(pin):
-#     GPIO.output(pin, GPIO.HIGH) #turn off heater
+channel = 21 #whatever you have it hooked up to
+state = GPIO.LOW
+GPIO.setup(channel, GPIO.OUT)
+#GPIO.output(channel, state)  this is the general syntax
+def heater_on(pin):
+     GPIO.output(pin, GPIO.HIGH) #turn on heater
 
-# heater_on(channel)
+heater_on(channel)
 
 print("I AM SO TURNED ON RIGHT NOW")

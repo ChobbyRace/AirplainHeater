@@ -21,12 +21,12 @@
 <?php
     if(isset($_POST['OFF']))
     {
-        echo system("python3 ../PythonScripts/off.py 2>&1");
+        echo system("python3 /var/www/html/AirplainHeater/PythonScripts/off.py 2>&1");
     }
     if(isset($_POST['BACK']))
     {
-	header('Location: http://raspberrypi:5351/', true, 301);
-	exit();
+	      header('Location: http://raspberrypi:5351/', true, 301);
+	      exit();
     }
 ?>
 

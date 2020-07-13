@@ -1,3 +1,4 @@
 gpiozero
 matplotlib
 datetime
+RPI.GPIO
