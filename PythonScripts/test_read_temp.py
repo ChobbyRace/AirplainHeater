@@ -4,11 +4,12 @@ import os
 def get_cputmp():
     stream = os.popen('/opt/vc/bin/vcgencmd measure_temp')
     out =  stream.read()
-    out_list=out.split(=)
-    return out_list[1]
+    out_list=out.split("=")
+    out_list=out_list[1].split("'C")
+    return float(out_list[0])
 def test_Temp():
     temp = get_cputmp()
-    #temp = ('{0:0.1f}'.format(temp))
+    temp = ('{0:0.1f}'.format(temp))
     with open("/var/www/html/AirplainHeater/cpu_temp.csv") as log:
         first_line = log.readline()
         if first_line == "":
