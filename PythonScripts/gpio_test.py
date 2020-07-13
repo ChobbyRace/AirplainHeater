@@ -7,5 +7,9 @@ def get_pin():
 
 def checkGPIO():
     pin = get_pin()
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(pin, GPIO.IN)
     channel_status = GPIO.input(pin)
     print("Pin ",pin," Status: ",channel_status)
+checkGPIO()
+
