@@ -1,9 +1,14 @@
 from datetime import *
 from random import randrange
-
+import os
+def get_cputmp():
+    stream = os.popen('/opt/vc/bin/vcgencmd measure_temp')
+    out =  stream.read()
+    out_list=out.split(=)
+    return out_list[1]
 def test_Temp():
-    temp = randrange(0,30)
-    temp = ('{0:0.1f}'.format(temp))
+    temp = get_cputmp()
+    #temp = ('{0:0.1f}'.format(temp))
     with open("/var/www/html/AirplainHeater/cpu_temp.csv") as log:
         first_line = log.readline()
         if first_line == "":

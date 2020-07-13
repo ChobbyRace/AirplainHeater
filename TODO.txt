@@ -3,7 +3,7 @@
 ## Functinoal ##
     # Website & Temp sensor #
         - test gpio capability on pi
-        - make cron job for temperature sensor
+        - Have heater status, time on, and current temp on home page
     
     # VPN #
         - download and setup pivpn
