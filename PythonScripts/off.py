@@ -1,9 +1,8 @@
-from gpiozero import Button, LED
 from time import sleep
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BOARD)
-
+GPIO.setwarnings(False)
 channel = 21 #whatever you have it hooked up to
 state = GPIO.LOW
 GPIO.setup(channel, GPIO.OUT)
