@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="static/styles.css" />
+    <link rel="stylesheet" href="../static/styles.css" />
 </head>
 <body>
 <div id="p00">
