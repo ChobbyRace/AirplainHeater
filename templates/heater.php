@@ -8,10 +8,10 @@
         <p><i>Control a heater from the conveinience of your own home!</i></p>
 </div>
 <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#heater">Heater</a>
-        <a href="#blog">Blog</a>
-        <a href="#about">About</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="templates/heater.php">Heater</a>
+        <a href="templates/blog.html">Blog</a>
+        <a href="templates/about.html">About</a>
 </div>
 <div>
     <p> The ability to control the heater from your home is very cool.
