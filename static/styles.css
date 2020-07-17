@@ -15,11 +15,11 @@ body {
 }
 
 #p01 {
-    background-color:rgb(249, 253, 229);
+    background-color:rgb(48, 107, 146);
     text-align:center;
 }
 #p02  {
-    color:rgb(240, 0, 0); 
+    color:rgb(12, 99, 0); 
     font-size: 150%;
     font-family:courier;
     border: 2px solid black;

@@ -8,8 +8,8 @@
         <p><i>Control a heater from the conveinience of your own home!</i></p>
 </div>
 <div class="topnav">
-        <a class="active" href="../index.html">Home</a>
-        <a href="heater.php">Heater</a>
+        <a href="../index.html">Home</a>
+        <a class="active" href="heater.php">Heater</a>
         <a href="blog.html">Blog</a>
         <a href="about.html">About</a>
 </div>
