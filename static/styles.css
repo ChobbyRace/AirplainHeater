@@ -1,47 +1,75 @@
 
 body {
-    background-color: rgb(201, 201, 245);
+    background-color:rgb(202, 234, 255);
+    position: relative;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
-#p00 {
+header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    z-index: 111;
+    transition: left 0.2s;
+}
+h2  {
+    color:rgb(12, 99, 0); 
+    font-size: 150%;
+    font-family:courier;
+    border: 2px solid black;
+    padding: 20px;
+    text-align:center;
+    }
+section {
+        display: -webkit-flex;
+        display: flex;
+}
+nav{
+    float:left;
+    width: 20%;
+    background: rgba(143, 206, 241, 0.397);
+    padding: 20px;
+}
+article{
+    float:left;
+    padding: 20px;
+    width: 80%;
+    background:#ccc;
+}
+#header {
     background-color: rgba(5, 84, 202, 0.562);
     text-align: left;
     font-size: 100%;
     font-family: Arial;
     position: relative;
-    border: 4px solid black;
-    margin-top:-8px;
-
-}
-
-#p01 {
-    background-color:rgb(249, 253, 229);
-    text-align:center;
-}
-#p02  {
-    color:rgb(240, 0, 0); 
-    font-size: 150%;
-    font-family:courier;
     border: 2px solid black;
-    padding: 20px;
-    }
-#end {
-    text-align:center;
-    position: float;
-    margin-top: 300px
-}
-
-#link {
-    margin-top:-10px;
-}
-#topButton {
-    background-color:rgb(249, 253, 229);
-}
-#bottonButton {
-    background-color:rgb(200, 253, 229);
+    /* min-height: 40px; */
 
 }
+#writeup {
+        text-align:center;
+        position: relative;
+        box-sizing: border-box;
+        margin-right: 20%;
+        margin-left: 20%;
+}
 
+.footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;;
+        color: white;
+        text-align: center;
+}
 .topnav {
     overflow: hidden;
     background-color: #333;

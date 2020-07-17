@@ -8,8 +8,8 @@
         <p><i>Control a heater from the conveinience of your own home!</i></p>
 </div>
 <div class="topnav">
-        <a class="active" href="../index.html">Home</a>
-        <a href="heater.php">Heater</a>
+        <a href="../index.html">Home</a>
+        <a class="active" href="heater.php">Heater</a>
         <a href="blog.html">Blog</a>
         <a href="about.html">About</a>
 </div>
@@ -19,6 +19,7 @@
         Make this into something cooler when you have the time
     </p>
     <br>
+    <!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
     <br>
         <h2 id="p02">What would you like to do?</h2>
         <form method="post">
@@ -42,3 +43,4 @@
         echo system("python3 /var/www/html/AirplainHeater/PythonScripts/off.py 2>&1");
     }
 ?>
+<!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
