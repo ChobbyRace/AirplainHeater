@@ -2,7 +2,7 @@
 	<link rel="stylesheet" href="../static/chart.css" />
 <head>
 <h2>Temperature over the past 24 hours</h2>
-<a href="/logs">Log Files</a>
+<a  href="../logs">Historical Log Files</a>
 <div class="table-wrapper">
 <table class="fl-table">
 

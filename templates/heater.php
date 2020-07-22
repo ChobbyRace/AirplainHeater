@@ -22,7 +22,7 @@
             This webpage has been a good learning experience
             Make this into something cooler when you have the time
         </p>
-        <a href="templates/chart.php">Heater</a>
+        <a href="chart.php">View Todays Temperature Chart</a>
             <!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
             <form method="post" style="text-align: center;">
                 <br>
