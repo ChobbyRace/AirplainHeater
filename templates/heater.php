@@ -33,7 +33,7 @@
             </form>
             <br>
             <br>
-            &nbsp;  &nbsp; <a class = "tempButton" href="chart.php">View Todays Temperature Chart</a>
+            &nbsp;  &nbsp; <a class = "tempButton" style="text-align: center;" href="chart.php">View Todays Temperature Chart</a>
     </div>
 </body>
 </html>

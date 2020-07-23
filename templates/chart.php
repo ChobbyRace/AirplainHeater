@@ -1,8 +1,9 @@
 <html><head>
-	<link rel="stylesheet" href="../static/chart.css" />
+    <link rel="stylesheet" href="../static/chart.css" />
+    <link rel="stylesheet" href="../static/styles.css" />
 <head>
 <h2>Todays Temperature Chart</h2>
-&nbsp;  &nbsp; <a class="tempButton" href="../logs">Historical Log Files</a>
+&nbsp;  &nbsp; <a class="tempButton" style="text-align: center;" href="../logs">Historical Log Files</a>
 <div class="table-wrapper">
 <table class="fl-table">
 
