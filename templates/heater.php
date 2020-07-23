@@ -19,10 +19,10 @@
     <div>
         <h2 id="p02">What would you like to do?</h2>
         <p> The ability to control the heater from your home is very cool.
-            This webpage has been a good learning experience
-            Make this into something cooler when you have the time
+            This webpage has been a good learning experience.
+            Make this into something cooler when you have the time.
         </p>
-        <a href="chart.php">View Todays Temperature Chart</a>
+        <a class = "temp-links" href="chart.php">View Todays Temperature Chart</a>
             <!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
             <form method="post" style="text-align: center;">
                 <br>
