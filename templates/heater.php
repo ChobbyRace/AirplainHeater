@@ -22,15 +22,15 @@
             This webpage has been a good learning experience.
             Make this into something cooler when you have the time.
         </p>
-        <a class = "temp-links" href="chart.php">View Todays Temperature Chart</a>
+        <a class = "tempButton" href="chart.php">View Todays Temperature Chart</a>
             <!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
             <form method="post" style="text-align: center;">
                 <br>
-                &nbsp;  &nbsp; <input type="submit" value="ON" name="ON">
+                &nbsp;  &nbsp; <input type="submit" value="ON" name="ON" class="onButton">
                 <br>
                 <br>
                 <br>
-                &nbsp;  &nbsp; <input type="submit" value="OFF" name="OFF">
+                &nbsp;  &nbsp; <input type="submit" value="OFF" name="OFF" class="offButton">
     </div>
 </body>
 </html>
