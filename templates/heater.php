@@ -22,7 +22,6 @@
             This webpage has been a good learning experience.
             Make this into something cooler when you have the time.
         </p>
-        <a class = "tempButton" href="chart.php">View Todays Temperature Chart</a>
             <!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
             <form method="post" style="text-align: center;">
                 <br>
@@ -31,6 +30,10 @@
                 <br>
                 <br>
                 &nbsp;  &nbsp; <input type="submit" value="OFF" name="OFF" class="offButton">
+            </form>
+            <br>
+            <br>
+            &nbsp;  &nbsp; <a class = "tempButton" href="chart.php">View Todays Temperature Chart</a>
     </div>
 </body>
 </html>
