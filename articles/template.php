@@ -19,7 +19,7 @@
         </div>
         
         <?php
-        $myfile = fopen("We Like To Fly.docx", "r") or die("Unable to open file!");
-        echo fread($myfile,filesize("We Like To Fly.docx"));
+        $myfile = fopen("file.txt", "r") or die("Unable to open file!");
+        echo fread($myfile,filesize("file.txt"));
         fclose($myfile);
         ?>

