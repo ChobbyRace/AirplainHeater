@@ -32,9 +32,11 @@
     <p1 class="article" :paragraph> 
         This is a paragraph. We can make things <b>Bold</b>, like this. We make a new line like this.<br>
         We can do italics like <i>this</i>.<br>
-        we can insert pictures in line like this <img src="../static/team_pic.JPG" width="33%"/> <br>
-        This is where the meat of the blog info will be input. Is it perfect? <b>No</b>.<br>
+        We can insert pictures in line like this <img src="../static/team_pic.JPG" width="33%"/> Look at me, I'm on the other side! <br>
+        If you want to tab, add a 
+        This is where the meat of the blog info will be input. Is having you write html the best thing ever? <b>No</b>.<br>
         But its something :) <br>
-        If you need help with writing into html, do a little self study at <a href="https://www.w3schools.com/html/"></a><br>
+        I'll be working on a better way to get text
+        If you need help with writing into html, do a little self study at <a href="https://www.w3schools.com/html/">This Link</a><br>
         Thanks where <i>I</i> learned it, and you can too!
     </p1>
