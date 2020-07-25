@@ -17,9 +17,12 @@
             <a class="active" href="templates/blog.html">Blog</a>
             <a href="templates/about.html">About</a>
         </div>
-        
-        <?php
-        $myfile = fopen("file.txt", "r") or die("Unable to open file!");
-        echo fread($myfile,filesize("file.txt"));
-        fclose($myfile);
-        ?>
+
+	<?php
+	$myfile = fopen("file.txt", "r") or die("Unable to open file!");
+	// Output one line until end-of-file
+	while(!feof($myfile)) {
+	 	echo fgets($myfile) . "<br>";
+	}
+	fclose($myfile);
+	?>
