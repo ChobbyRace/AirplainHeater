@@ -27,9 +27,14 @@
 	fclose($myfile);
     ?>
     
-    <h1 class="article" :h1> This is a header, do it to make bold statements</h1>
-    <h2 class="article" :h2> This is a slightly smaller header </h2>
-    <p class="article" :p> 
-        This is a paragraph. We can make things <b>Bold</b>, like this. We make a new paragraph like this.<br>
-        We can do italics like <i>this</i>.  
-    </p>
+    <h1 class="article" :h1> This is a header, do it to make big statements</h1>
+    <h3 class="article" :h3> This is a slightly smaller header </h3>
+    <p1 class="article" :paragraph> 
+        This is a paragraph. We can make things <b>Bold</b>, like this. We make a new line like this.<br>
+        We can do italics like <i>this</i>.<br>
+        we can insert pictures in line like this <img src="../static/team_pic.JPG" width="33%"/> <br>
+        This is where the meat of the blog info will be input. Is it perfect? <b>No</b>.<br>
+        But its something :) <br>
+        If you need help with writing into html, do a little self study at <a href="https://www.w3schools.com/html/"></a><br>
+        Thanks where <i>I</i> learned it, and you can too!
+    </p1>

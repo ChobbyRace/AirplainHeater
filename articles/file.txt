@@ -5,9 +5,9 @@ Linux_Ops Station
 -> P1: 10.50.25.213 adeptus:mechanicus OS:VYOS
 --> T1: 172.16.28.?/24
 
-creds:
-adeptus:mechanicus ??
-frank:password ??
+							creds:
+							adeptus:mechanicus ??
+							frank:password ??
 
 ##Enumeration Cutsheet
 
