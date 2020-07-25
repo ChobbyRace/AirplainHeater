@@ -25,4 +25,11 @@
 	 	echo fgets($myfile) . "<br>";
 	}
 	fclose($myfile);
-	?>
+    ?>
+    
+    <h1 class="article" :h1> This is a header, do it to make bold statements</h1>
+    <h2 class="article" :h2> This is a slightly smaller header </h2>
+    <p class="article" :p> 
+        This is a paragraph. We can make things <b>Bold</b>, like this. We make a new paragraph like this.<br>
+        We can do italics like <i>this</i>.  
+    </p>

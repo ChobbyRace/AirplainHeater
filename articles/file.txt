@@ -1,9 +1,9 @@
 Objective: Gain root access to the websrver within the 172.16.28.0/24 network \n
 
-SoM:	\n
+SoM:	
 Linux_Ops Station
 -> P1: 10.50.25.213 adeptus:mechanicus OS:VYOS
---> T1: 172.16.28.?/24 \n
+--> T1: 172.16.28.?/24
 
 creds:
 adeptus:mechanicus ??
@@ -16,4 +16,4 @@ nc -zvnw1 10.50.25.213 22	see if port 22 is up
 nc -vnw1 10.50.25.213 22	bannergrab
 
 Results: 
-10.50.25.213 Open on 22 SSH-2.0-OpenSSh \n
+10.50.25.213 Open on 22 SSH-2.0-OpenSSh 
