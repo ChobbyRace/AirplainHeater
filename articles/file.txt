@@ -1,19 +1,8 @@
-Objective: Gain root access to the websrver within the 172.16.28.0/24 network \n
+This is an Example text file for my own reference.
 
-SoM:	
-Linux_Ops Station
--> P1: 10.50.25.213 adeptus:mechanicus OS:VYOS
---> T1: 172.16.28.?/24
+This is feature will probably not be used, so this remnant file is
+here in order to maintain understanding of how to output a text file
+using php.
 
-							creds:
-							adeptus:mechanicus ??
-							frank:password ??
-
-##Enumeration Cutsheet
-
-ping -c1 10.50.25.213
-nc -zvnw1 10.50.25.213 22	see if port 22 is up
-nc -vnw1 10.50.25.213 22	bannergrab
-
-Results: 
-10.50.25.213 Open on 22 SSH-2.0-OpenSSh 
+If the formatting of this is fine, then you can change this to something 
+more relevent.
