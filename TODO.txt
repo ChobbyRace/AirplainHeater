@@ -4,12 +4,9 @@
     # Website & Temp sensor #
         - test gpio capability on pi
         - Have heater status, time on, and current temp on home page
-            - on and off py scripts should display to a log waht time for turnon or turnoff
-        - allow access to temp logs from webpage
+            - on and off py scripts should display to a log what time for turnon or turnoff
 
     # VPN #
-        - download and setup pivpn
-        - get port forwarding to work on router
         - if using celular, how would that work?
 
 

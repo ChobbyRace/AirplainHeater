@@ -1,4 +1,5 @@
-from time import sleep
+import time
+import datetime
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BOARD)
@@ -11,4 +12,12 @@ def heater_off(pin):
     GPIO.output(pin, GPIO.LOW) #turn off heater
     channel_status = GPIO.input(pin)
     print("Pin ",pin," Status: ",channel_status)
+
+def output_Status(status):
+     ts = time.time()
+     st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+     with open("heater_status.txt", 'w') as f:
+          f.write('Heater '+ status + ' At: ' + st)
+
+output_Status('off')
 heater_off(channel)

@@ -35,6 +35,12 @@
             <br>
             &nbsp;  &nbsp; <a class = "tempButton" style="text-align: center;" href="chart.php">View Todays Temperature Chart</a>
     </div>
+    <address class="footer">
+            Written by Rob Chase.<br>
+            For his Dad <br>
+            To heat the Airplane <br>
+            For Tech Support, Call 802-393-7535<br>
+    </address>
 </body>
 </html>
 
