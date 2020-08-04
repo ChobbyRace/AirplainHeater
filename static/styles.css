@@ -27,6 +27,14 @@ h2  {
     padding: 20px;
     text-align:center;
     }
+#heater_status {
+    color:rgb(12, 99, 0);
+    font-size: 120%;
+    text-align:center;
+    border: 2px solid black;
+    padding: 20px;
+}
+
 section {
         display: -webkit-flex;
         display: flex;

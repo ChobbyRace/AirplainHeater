@@ -19,5 +19,5 @@ def output_Status(status):
      with open("../logs/heater_status.txt", 'a') as f:
           f.write('Heater '+ status + ' At: ' + st + '\n')
 
-output_Status('off')
+output_Status('OFF')
 heater_off(channel)

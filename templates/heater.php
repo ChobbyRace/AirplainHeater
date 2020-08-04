@@ -17,43 +17,44 @@
             <a href="about.html">About</a>
     </div>
     <div>
-        <h2 id="p02">What would you like to do?</h2>
+        <h2>What would you like to do?</h2>
         <p> The ability to control the heater from your home is very cool. </p>
         <p> This webpage has been a good learning experience. </p>
         <p> Make this into something cooler when you have the time. </p>
-        <h3 id="p03"> The heater is currently : </h3>
+        <h3 id="heater_status"> Heater Status : 
        
        <?php
-$line = '';
+            $line = '';
 
-$f = fopen('../logs/heater_status.txt', 'r');
-$cursor = -1;
+            $f = fopen('../logs/heater_status.txt', 'r');
+            $cursor = -1;
 
-fseek($f, $cursor, SEEK_END);
-$char = fgetc($f);
+            fseek($f, $cursor, SEEK_END);
+            $char = fgetc($f);
 
-/**
- * Trim trailing newline chars of the file
- */
-while ($char === "\n" || $char === "\r") {
-    fseek($f, $cursor--, SEEK_END);
-    $char = fgetc($f);
-}
+            /**
+             * Trim trailing newline chars of the file
+             */
+            while ($char === "\n" || $char === "\r") {
+                fseek($f, $cursor--, SEEK_END);
+                $char = fgetc($f);
+            }
 
-/**
- * Read until the start of file or first newline char
- */
-while ($char !== false && $char !== "\n" && $char !== "\r") {
-    /**
-     * Prepend the new char
-     */
-    $line = $char . $line;
-    fseek($f, $cursor--, SEEK_END);
-    $char = fgetc($f);
-}
+            /**
+             * Read until the start of file or first newline char
+             */
+            while ($char !== false && $char !== "\n" && $char !== "\r") {
+                /**
+                 * Prepend the new char
+                 */
+                $line = $char . $line;
+                fseek($f, $cursor--, SEEK_END);
+                $char = fgetc($f);
+            }
 
-echo $line;
-        ?>
+            echo $line;
+        ?></h3>
+
             <!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
             <form method="post" style="text-align: center;">
                 <br>
