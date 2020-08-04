@@ -18,9 +18,9 @@
     </div>
     <div>
         <h2>What would you like to do?</h2>
-        <p> The ability to control the heater from your home is very cool. </p>
-        <p> This webpage has been a good learning experience. </p>
-        <p> Make this into something cooler when you have the time. </p>
+        <p style="text-align: center; font-size: 120%;"> The ability to control the heater from your home is very cool. </p>
+        <p style="text-align: center; font-size: 120%;"> This webpage has been a good learning experience. </p>
+        <p style="text-align: center; font-size: 120%;"> Make this paragraph into something cooler when you have the time. </p>
         <h3 id="heater_status"> Heater Status : 
        
        <?php

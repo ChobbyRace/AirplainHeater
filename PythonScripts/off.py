@@ -17,7 +17,7 @@ def output_Status(status):
      ts = time.time()
      st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
      with open("../logs/heater_status.txt", 'a') as f:
-          f.write('Heater '+ status + ' At: ' + st + '\n')
+          f.write('Heater '+ status + ' at: ' + st + '\n')
 
 output_Status('OFF')
 heater_off(channel)
