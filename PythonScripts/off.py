@@ -16,8 +16,8 @@ def heater_off(pin):
 def output_Status(status):
      ts = time.time()
      st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
-     with open("heater_status.txt", 'w') as f:
-          f.write('Heater '+ status + ' At: ' + st)
+     with open("../logs/heater_status.txt", 'w') as f:
+          f.write('Heater '+ status + ' At: ' + st + '\n')
 
 output_Status('off')
 heater_off(channel)
