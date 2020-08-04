@@ -18,10 +18,23 @@
     </div>
     <div>
         <h2 id="p02">What would you like to do?</h2>
-        <p> The ability to control the heater from your home is very cool.
-            This webpage has been a good learning experience.
-            Make this into something cooler when you have the time.
-        </p>
+        <p> The ability to control the heater from your home is very cool. </p>
+        <p> This webpage has been a good learning experience. </p>
+        <p> Make this into something cooler when you have the time. </p>
+        <h3 id="p03"> The heater is currently : </h3>
+       
+       <?php
+        $fp = fopen("../logs/heater_status.txt");
+        fseek($fp, -1, SEEK_END); 
+        $pos = ftell($fp);
+        $LastLine = "";
+        // Loop backword util "\n" is found.
+        while((($C = fgetc($fp)) != "\n") && ($pos > 0)) {
+            $LastLine = $C.$LastLine;
+            fseek($fp, $pos--);
+        }
+        echo $LastLine;
+        ?>
             <!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
             <form method="post" style="text-align: center;">
                 <br>
