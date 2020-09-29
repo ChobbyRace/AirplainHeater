@@ -1,17 +1,22 @@
 ### things to do ###
 
 ## Functinoal ##
-    # Website & Temp sensor #
+    # Temp Sensor #
         - test gpio capability on pi
-        - Have heater status, time on, and current temp on home page
-            - on and off py scripts should display to a log what time for turnon or turnoff
+        - buy temp sensor and figure out how to get temp readings from it 
+    # Heater Functionality
+        - test with realys
+        - figure out way to allow job scheduling (run from this time to this time on this day)
 
     # VPN #
         - if using celular, how would that work?
-
+        - if stealing wifi, how we doin that (aircrack best way? cost of antena vs celular)
 
 ## visual ##
     make columns for chart more even
-    - get picture of the airplane
     - make index.html look better, use this template 
         https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_band&stacked=h
+
+## Blog ##
+    - Add functionality to display word docs (or those similar)
+        - possibly easiest to use wordpress

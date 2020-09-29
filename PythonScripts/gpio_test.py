@@ -12,4 +12,5 @@ def checkGPIO():
     channel_status = GPIO.input(pin)
     print("Pin ",pin," Status: ",channel_status)
 checkGPIO()
+GPIO.cleanup()
 

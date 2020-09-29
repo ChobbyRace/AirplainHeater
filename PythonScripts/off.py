@@ -21,3 +21,4 @@ def output_Status(status):
 
 output_Status('OFF')
 heater_off(channel)
+GPIO.cleanup()
