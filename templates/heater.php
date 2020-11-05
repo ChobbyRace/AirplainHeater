@@ -87,4 +87,10 @@
         echo system("python3 /var/www/html/AirplainHeater/PythonScripts/off.py 2>&1");
     }
 ?>
-<!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
+<?php  
+echo '<script type="text/JavaScript">  
+     prompt("GeeksForGeeks"); 
+     </script>' 
+; 
+?> 
+
