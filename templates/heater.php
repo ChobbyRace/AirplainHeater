@@ -58,11 +58,11 @@
             <!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
             <form method="post" style="text-align: center;">
                 <br>
-                &nbsp;  &nbsp; <input type="submit" value="ON" name="ON" class="onButton" onClick="window.location.reload();">
+                &nbsp;  &nbsp; <input type="submit" value="ON" name="ON" class="onButton" onClick="window.location.href=window.location.href">
                 <br>
                 <br>
                 <br>
-                &nbsp;  &nbsp; <input type="submit" value="OFF" name="OFF" class="offButton" onClick="window.location.reload();">
+                &nbsp;  &nbsp; <input type="submit" value="OFF" name="OFF" class="offButton" onClick="window.location.href=window.location.href">
             </form>
             <br>
             <br>
