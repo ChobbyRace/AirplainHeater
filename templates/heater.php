@@ -81,16 +81,19 @@
     if(isset($_POST['ON']))
     {
         echo system("python3 /var/www/html/AirplainHeater/PythonScripts/on.py 2>&1");
+        echo '<script type="text/JavaScript">  
+                location.reload(); 
+                </script>' 
+                ; 
     }
     if(isset($_POST['OFF']))
     {
         echo system("python3 /var/www/html/AirplainHeater/PythonScripts/off.py 2>&1");
+        echo '<script type="text/JavaScript">  
+                location.reload(); 
+                </script>' 
+                ; 
     }
 ?>
-<?php  
-echo '<script type="text/JavaScript">  
-     prompt("GeeksForGeeks"); 
-     </script>' 
-; 
-?> 
+
 
