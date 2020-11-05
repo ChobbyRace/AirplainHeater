@@ -58,11 +58,11 @@
             <!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
             <form method="post" style="text-align: center;">
                 <br>
-                &nbsp;  &nbsp; <input type="submit" value="ON" name="ON" class="onButton" onClick="window.location.href=window.location.href">
+                &nbsp;  &nbsp; <input type="submit" value="ON" name="ON" class="onButton">
                 <br>
                 <br>
                 <br>
-                &nbsp;  &nbsp; <input type="submit" value="OFF" name="OFF" class="offButton" onClick="window.location.href=window.location.href">
+                &nbsp;  &nbsp; <input type="submit" value="OFF" name="OFF" class="offButton">
             </form>
             <br>
             <br>
@@ -81,10 +81,18 @@
     if(isset($_POST['ON']))
     {
         echo system("python3 /var/www/html/AirplainHeater/PythonScripts/on.py 2>&1");
+        echo '<script type="text/JavaScript">  
+        location.reload(); 
+        </script>' 
+        ; 
     }
     if(isset($_POST['OFF']))
     {
         echo system("python3 /var/www/html/AirplainHeater/PythonScripts/off.py 2>&1");
+        echo '<script type="text/JavaScript">  
+        location.reload(); 
+        </script>' 
+        ; 
     }
 ?>
 
