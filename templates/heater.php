@@ -62,7 +62,7 @@
                 <br>
                 <br>
                 <br>
-                &nbsp;  &nbsp; <input type="submit" value="OFF" name="OFF" class="offButton onClick="window.location.reload();">
+                &nbsp;  &nbsp; <input type="submit" value="OFF" name="OFF" class="offButton" onClick="window.location.reload();">
             </form>
             <br>
             <br>
