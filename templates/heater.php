@@ -16,9 +16,9 @@
     </div>
     <div>
         <h2>What would you like to do?</h2>
-        <p style="text-align: center; font-size: 120%;"> The ability to control the heater from your home is very cool. </p>
-        <p style="text-align: center; font-size: 120%;"> This webpage has been a good learning experience. </p>
-        <p style="text-align: center; font-size: 120%;"> Make this paragraph into something cooler when you have the time. </p>
+        <p style="text-align: center; font-size: 120%;"> The ability to control the heater remotely should be helpful in winter months. </p>
+        <p style="text-align: center; font-size: 120%;"> Don't worry, all you can control from this page is turning the heater on and off. </p>
+        <p style="text-align: center; font-size: 120%;"> The Heater Status Bellow is delayed; refresh the page once to see the real current status. </p>
         <h3 id="heater_status"> Heater Status : 
        
        <?php
