@@ -80,11 +80,11 @@
 <?php
     if(isset($_POST['ON']))
     {
-        echo system("python3 /var/www/html/AirplainHeater/PythonScripts/on.py 2>&1");
+        echo system("python3 /var/www/AirplainHeater/PythonScripts/on.py 2>&1");
     }
     if(isset($_POST['OFF']))
     {
-        echo system("python3 /var/www/html/AirplainHeater/PythonScripts/off.py 2>&1");
+        echo system("python3 /var/www/AirplainHeater/PythonScripts/off.py 2>&1");
     }
 ?>
 <!-- <div><p><?php include('myFile.txt'); ?></p></div> -->
