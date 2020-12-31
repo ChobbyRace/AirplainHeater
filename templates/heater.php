@@ -13,6 +13,7 @@
     <div class="topnav">
             <a href="../index.html">Home</a>
             <a class="active" href="heater.php">Heater</a>
+            <a href="chart.php">Temp Chart</a>
     </div>
     <div>
         <h2>What would you like to do?</h2>
