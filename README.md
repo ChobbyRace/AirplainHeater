@@ -1,7 +1,7 @@
 # AirplainHeater
 This is a project I worked on for creating a device to remotely turn on heaters for my father's airplane. 
 
-The requirement to preheat cold engines before flying is a common problem for many privot airplane owners who live in the Northern part of the United States. This process can take multiple hours, and for pilots that house their planes far from home, driving an hour to the hanger to turn on a heater and wait is a big problem. 
+The requirement to preheat cold engines before flying is a common problem for many private airplane owners who live in the Northern part of the United States. This process can take multiple hours, and for pilots that house their planes far from home, driving an hour to the hanger to turn on a heater and wait is a big problem. 
 
 There are a few comercial solutions available, but they are both: 
 1) Expensive  
